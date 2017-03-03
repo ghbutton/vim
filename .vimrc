@@ -1,5 +1,7 @@
 " Configuration
 
+execute pathogen#infect()
+
 " Basic Settings
 
 filetype plugin indent on
@@ -26,7 +28,6 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set number
-set relativenumber
 set noundofile
 nnoremap / /\v
 vnoremap / /\v
@@ -43,8 +44,7 @@ set wrap
 set linebreak
 set nolist
 set formatoptions=qrn1
-set spell spelllang=en_us
-set colorcolumn=80
+" set spell spellang=en_us
 
 " Aesthetics
 
@@ -114,3 +114,4 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
